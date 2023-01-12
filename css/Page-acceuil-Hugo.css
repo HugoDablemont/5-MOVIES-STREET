@@ -1,9 +1,5 @@
 body{
-/* Created with https://www.css-gradient.com */
-background: #76064B;
-background: -webkit-linear-gradient(top right, #76064B, #C0B4BD);
-background: -moz-linear-gradient(top right, #76064B, #C0B4BD);
-background: linear-gradient(to bottom left, #76064B, #C0B4BD);
+background-image: url("../images/hendrik-kespohl-Stk2vfPWr0w-unsplash.jpg");
 }
 header{
     background-image: url("../images/myke-simon-atsUqIm3wxo-unsplash.jpg");
