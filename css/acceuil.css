@@ -54,6 +54,17 @@ header{
     display: flex;
     justify-content: center;
 }
+.liste-footer{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+   
+
+}
+.liste-footer li{
+    margin-right: 30px;
+
+}
 
 
 
