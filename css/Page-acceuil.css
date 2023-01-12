@@ -1,0 +1,35 @@
+header{
+    background-image: url("../html/myke-simon-atsUqIm3wxo-unsplash.jpg");
+    background-size: 100%;
+    height: 100vh;
+}
+
+
+#contener img{
+    width: 850px;
+}
+
+#contener{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+}
+
+
+
+#Elon{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    height: 0%;
+}
+
+#Elon img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    font-size: 5px;
+    box-shadow: black 5px 5px 10px;
+}
+
