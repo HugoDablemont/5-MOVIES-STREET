@@ -35,6 +35,9 @@ body{
         font-size: 5px;
         box-shadow: black 5px 5px 10px;
     }
+    
+    
+    
 
     .contener-poster img{
         border-radius: 20px;
@@ -45,10 +48,7 @@ body{
         box-shadow: black 5px 5px 15px;
         
     }
-    #categories{
-        padding: 30px;
-    }
-    
+   
     .contener-poster{
         display: flex;
         justify-content: center;
