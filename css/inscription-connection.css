@@ -1,0 +1,30 @@
+body{
+    background-image: url("../images/hendrik-kespohl-Stk2vfPWr0w-unsplash.jpg");
+    }
+    header{
+        background-image: url("../images/hendrik-kespohl-Stk2vfPWr0w-unsplash.jpg");
+        background-size: 100%;
+        height: 100vh;
+    }
+    
+    
+    #contener img{
+        width: 850px;
+    }
+    
+    #contener{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95%;
+    }
+    .liste-footer{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .liste-footer li{
+        margin-right: 30px;
+    
+    }
