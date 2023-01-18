@@ -43,7 +43,7 @@ header{
     width: 250px;
     height: 350px;
     border: white 10px solid;
-    box-shadow: black 5px 5px 15px;
+    box-shadow: black 10px 10px 30px;
     
 }
 #categories{
