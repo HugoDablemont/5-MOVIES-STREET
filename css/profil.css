@@ -46,12 +46,32 @@ body{
         justify-content: center;
         box-shadow: 5px 5px 10px;
         align-items: center;
-        margin: 100px;
+        background: rgba(255, 255, 255, 0.9);
+        color: rgb(255, 60, 0) ;
+        text-shadow: 5px 5px 10px orange;
+        font-size: 25px;
+        width: 50%;
+        border-radius: 10px;
+        margin: 200px;
     }
     .liste-compte{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: baseline;
+        align-items: center;
         margin: 250px;
-        color: orange ;
+        color: rgb(255, 60, 0) ;
+        text-shadow: 5px 5px 5px orange;
+        font-size: 25px;
 
     }
+
+    .liste-compte li {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        text-align: center;
+        width: 50%;
+    }
+  
+
+    
