@@ -23,7 +23,7 @@ let films = [
     new film("REINE.jpg", "reine des neiges", ["lien1", "lien2", "lien3"], "description", false, "animation"),
     new film("tous en scene.jpg", "tous en scene", ["lien1", "lien2", "lien3"], "description", false, "animation"),
     new film("lion king.jpg", "le roi lion", ["lien1", "lien2", "lien3"], "description", false, "animation"),
-    new film("Vaiana.jpg", "vaiana", ["lien1", "lien2", "lien3"], "description", false, "animation"),
+    new film("Vaiana_la_legende_du_bout_du_monde.jpg", "vaiana", ["lien1", "lien2", "lien3"], "description", false, "animation"),
     new film("zootopia.jpg", "vaiana", ["lien1", "lien2", "lien3"], "description", false, "animation"),
     new film("la-haut.jpg", "la-haut", ["lien1", "lien2", "lien3"], "description", false, "animation"),
     new film("moi moche et mechant.jpg", "moi moche et mechant", ["lien1", "lien2", "lien3"], "description", false, "animation"),
@@ -40,7 +40,7 @@ let films = [
     new film("rosaline.jpg", "rosaline", ["lien1", "lien2", "lien3"], "description", false, "romantique"),
     new film("serena.jpg", "serena", ["lien1", "lien2", "lien3"], "description", false, "romantique"),
     new film("west side stoyr.jpg", "west side stoyr", ["lien1", "lien2", "lien3"], "description", false, "romantique"),
-    new film("dans_la_peau_de_nos_animeaux.jpg", "dans_la_peau_de_nos_animeaux", ["lien1", "lien2", "lien3"], "description", false, "decouverte"),
+    new film("dans_la_peau_de_nos_animaux.jpg", "dans_la_peau_de_nos_animaux", ["lien1", "lien2", "lien3"], "description", false, "decouverte"),
     new film("decouverte.jpg", "decouverte", ["lien1", "lien2", "lien3"], "description", false, "decouverte"),
     new film("la_sagesse_de_la_pieuvre.jpg", "la_sagesse_de_la_pieuvre", ["lien1", "lien2", "lien3"], "description", false, "decouverte"),
     new film("lost city.jpg", "lost city", ["lien1", "lien2", "lien3"], "description", false, "decouverte"),
@@ -62,28 +62,44 @@ let films = [
     new film("benjamin.jpg", "benjamin", ["lien1", "lien2", "lien3"], "description", false, "thriller"),
 ];
 
-function getRandomPoster(tabIndex){
-    let randomPoster = Math.round(Math.random() * 7);
-    for (let j = 0; j < tabIndex.length; j++) {
-        if(tabIndex[j] == randomPoster){
-            randomPoster = Math.round(Math.random() * 7);
-        }else{
-            tabIndex.push(randomPoster);
-        }
-    }
-    if(tabIndex.length == 0){
-        tabIndex.push(randomPoster);
-    }
-    return tabIndex
-}
-
-const listePoster = document.querySelector(".contener-poster");
-console.log(listePoster);
-
 let tabIndex = [];
 
-for (let i = 0; i < 5; i++) {
-    listePoster.innerHTML += `<img src="../images/affiche-films/action/${films[getRandomPoster(tabIndex).at(-1)].photo}" alt="logo"/>`
+function randomPoster(nb) {
+    return Math.round(Math.random() * nb);
 }
 
+function getRandomPoster() {
+    let randomNumber = randomPoster(9);
+    let badRandom = true;
+    if (tabIndex.length > 0) {
+        while (badRandom) {
+            console.log(tabIndex, randomNumber)
+            if (tabIndex.find(index => index === randomNumber)) {
+                randomNumber = randomPoster(9);
+            } else {
+                badRandom = false;
+            }
+        }
+    }
+    tabIndex.push(randomNumber);
+    return randomNumber;
+}
 
+const listePoster = document.querySelectorAll(".contener-poster");
+console.log(listePoster);
+
+
+function affichagePoster(index, categorie) {
+    const filmCategorie = films.filter(film => film.categories == categorie);
+    for (let i = 0; i < 5; i++) {
+        let indexPoster = getRandomPoster();
+        listePoster[index].innerHTML += `<img src="../images/affiche-films/${categorie}/${filmCategorie[indexPoster].photo}" alt="${filmCategorie[indexPoster].nom}"/>`
+    }
+    tabIndex = [];
+}
+
+affichagePoster(0, "action");
+affichagePoster(1, "animation");
+affichagePoster(2, "thriller");
+affichagePoster(3, "romantique");
+affichagePoster(4, "decouverte");
