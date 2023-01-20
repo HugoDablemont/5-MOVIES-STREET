@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/profil.css">
+    <link rel="stylesheet" href="../css/inscription-connection.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
@@ -13,55 +13,65 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
-    <title>page de profil</title>
+    <title>page inscription</title>
 </head>
 <body>
- <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h5 class="text-white h4">Collapsed content</h5>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
-    </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarToggleExternalContent"
-        aria-controls="navbarToggleExternalContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </nav>
-    <header>
-        <div class="container-elon">
-          <div id="Elon">
-            <a href="/html/acceuil.html"> <img src="../images/profil/elon-musk.jpg" alt="Elon"></a>
-          </div>
-          <p>Elon Musk</p>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4">Collapsed content</h5>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
-        
-          <br>
-          <div id="container-button-profil">
-            <button class="button-profil">Modifier profil</button>
-            <button class="button-profil">Ma liste</button>
-            <button class="button-profil">Paramètres du compte</button>
-            <button class="button-profil">Se déconnecter</button>
-          </div>
-      <!-- <ul class="liste-compte" >
-        <li type="button">Ma liste</li>
-        
-        <li type="button">Paramètres du compte</li>
-        
-        <li type="button">Se déconnecter</li>
-    
-      </ul> -->
-          
-      </header> 
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    <header>
+      <a href="/html/acceuil.html">Accueil</a>
+      <a href="/html/connexion.html">Connexion</a>
+      <div id="div-form">
+          <form id="form">
+              <div id="input-line1">
+                  <p>Nom</p>
+                  <input type="text" name="" id="nom">
+              </div>
+              <div id="input-line2">
+                  <p>Prenom</p>
+                  <input type="text" name="" id="prenom">
+              </div>
+              <div id="input-line3">
+                  <p>email</p>
+                  <input type="email" name="" id="email">
+              </div>
+              <div id="input-line4">
+                  <p>mot de passe</p>
+                  <input type="password" name="" id="password">
+              </div>
+              <div id="input-line5">
+                  <p>confirmer mot de passe</p>
+                  <input type="password" name="" id="password-confirm">
+              </div>
+              <div id="input-line6">
+                  <input type="button" value="Envoyer" id="submit-btn">
+              </div>
+              <a href="/html/profil.html">déjà un compte ?</a>
+          </form>
+      </div>
+      <script src="inscription.js"></script>
+  
+      </header>
+      
      <!-- Footer -->
   <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
