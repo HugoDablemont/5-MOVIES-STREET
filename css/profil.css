@@ -38,3 +38,17 @@
         margin-right: 30px;
     
     }
+    .button-profil{
+        display: flex;
+        justify-content: center;
+        box-shadow: 5px 5px 10px;
+        align-items: center;
+        margin: 100px;
+    }
+    .liste-compte{
+        justify-content: center;
+        align-items: baseline;
+        margin: 250px;
+        color: orange ;
+
+    }
