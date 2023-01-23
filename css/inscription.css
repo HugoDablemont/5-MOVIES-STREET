@@ -1,0 +1,46 @@
+body{
+    background-image: url("../images/hendrik-kespohl-Stk2vfPWr0w-unsplash.jpg");
+    background-repeat: no-repeat;
+    }
+    
+    
+    #contener img{
+        width: 850px;
+    }
+    
+    #contener{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95%;
+    }
+    #div-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 50px;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .liste-footer{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .liste-footer li{
+        margin-right: 30px;
+    
+    }
+    /* #div-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        
+    } */
