@@ -12,9 +12,11 @@
     
     #contener{
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
-        height: 95%;
+        height: 100%;
+        width: 100%;
+        margin: 0 10px;
     }
    
     #div-form{
@@ -36,6 +38,16 @@
         background-color: rgba(0, 0, 0, 0.350);
         padding: 50px;
         margin-top:50px;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    a:hover{
+        color:rgb(255, 0, 98)
     }
    
 /* 
