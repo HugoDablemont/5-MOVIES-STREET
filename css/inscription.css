@@ -1,6 +1,4 @@
-body{
-    background-image: url("../images/hendrik-kespohl-Stk2vfPWr0w-unsplash.jpg");
-    }
+
     header{
         background-image: url("../images/myke-simon-atsUqIm3wxo-unsplash.jpg");
         position: relative;
@@ -9,7 +7,7 @@ body{
     }
     
     #contener img{
-        width: 850px;
+        width: 100px;
     }
     
     #contener{
@@ -18,33 +16,64 @@ body{
         align-items: center;
         height: 95%;
     }
+   
     #div-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+
+    }
+    #input-line3{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        margin-top: 50px;
+    }
+
+    
+    
+    #div-form{
+        background-color: rgba(0, 0, 0, 0.350);
         padding: 50px;
     }
-    form{
+   
+/* 
+     #div-form{
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        align-items: center;
+     } */
+       
+    /* form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        border: 3px solid rgba(243, 236, 236, 0.062);
     }
+
+    #input-line1{
+        display: flex;
+        color: rgb(16, 16, 97);
+    } */ 
+
     .liste-footer{
         list-style-type: none;
         display: flex;
         justify-content: center;
     
     }
+
     .liste-footer li{
-        margin-right: 30px;
+        margin-right: 50px;
     
     }
-    /* #div-form{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-        
-    } */
+
+    p{
+        color: white;
+    }
+    
+    
