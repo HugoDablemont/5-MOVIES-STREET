@@ -22,7 +22,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 60px;
 
     }
     #input-line3{
@@ -33,9 +32,10 @@
 
     
     
-    #div-form{
+    #div-form form{
         background-color: rgba(0, 0, 0, 0.350);
         padding: 50px;
+        margin-top: 50px;
     }
    
 /* 
