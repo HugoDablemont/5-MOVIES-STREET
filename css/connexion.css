@@ -1,6 +1,4 @@
-body{
-    background-image: url("../images/hendrik-kespohl-Stk2vfPWr0w-unsplash.jpg");
-    }
+
     header{
         background-image: url("../images/myke-simon-atsUqIm3wxo-unsplash.jpg");
         position: relative;
@@ -24,7 +22,6 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 60px;
 
     }
     #input-line3{
@@ -38,6 +35,7 @@ body{
     #div-form form{
         background-color: rgba(0, 0, 0, 0.350);
         padding: 50px;
+        margin-top:50px;
     }
    
 /* 
