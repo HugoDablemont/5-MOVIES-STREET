@@ -6,7 +6,8 @@ body {
 header {
     background-image: url("../images/hendrik-kespohl-Stk2vfPWr0w-unsplash.jpg");
     background-size: 100%;
-    height: 100vh;
+    height: 790px;
+    width: 1361px;
 }
 
 #Elon {
@@ -52,8 +53,8 @@ nav {
 .contener-reine {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-top: 1%;
+    padding-left: 1%;
     color: white;
 }
 
@@ -62,15 +63,14 @@ nav {
     justify-content: flex-end;
 }
 
-a {
+.nav-link{
     color: white;
     text-decoration: none;
     margin-right: 10px;
-    
 }
 
-a:hover {
-    color: rgb(255, 0, 98)
+.nav-link:hover{
+    color:rgb(255, 0, 98)
 }
 
 .liste-footer {
@@ -85,6 +85,10 @@ a:hover {
 
 }
 
+#p1{
+    color: white
+}
+
 #p2 {
     color: white;
 }
@@ -94,20 +98,31 @@ li {
     text-decoration: none;
 }
 
+#contener-info{
+    background-color: rgba(0, 0, 0, 0.350);
+    padding: 30px;
+    margin-top:30px;
+    border-radius: 5%;
+}
+
+#contener-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 10%;
+}
+
 .contener-logo {
     border-radius: 50%;
 }
 
-/* footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-} */
-
 #plateform{
     width: 100px;
     border-radius: 10px;
+    box-shadow: black 5px 5px 15px;
+}
+
+#plateform{
     display: flex;
-    justify-content: flex-start;
 }
