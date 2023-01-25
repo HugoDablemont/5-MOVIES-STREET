@@ -81,7 +81,3 @@ body{
         
     }
 
-    .two-movies{
-        display: flex;
-        flex-direction: row;
-    }
