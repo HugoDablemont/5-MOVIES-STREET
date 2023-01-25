@@ -24,15 +24,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
+
     #input-line3{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
-    
     
     #div-form form{
         background-color: rgba(0, 0, 0, 0.350);
