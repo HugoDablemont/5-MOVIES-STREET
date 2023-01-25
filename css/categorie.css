@@ -71,5 +71,17 @@ body{
     #categories{
         display: flex;
         justify-content: center;
+        margin: 0 500px;
+        border-radius: 20px;
+        width: 325px;
+        height: 440px;
+        border: white 10px solid;
+        box-shadow: black 5px 5px 15px;
         
+        
+    }
+
+    .two-movies{
+        display: flex;
+        flex-direction: row;
     }
