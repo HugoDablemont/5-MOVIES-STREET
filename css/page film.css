@@ -128,3 +128,9 @@ li {
     display: flex;
     margin-left: 3%;
 }
+
+@media screen and (max-width: 1600px){
+    body {
+        min-height: 200vh;
+    }
+}
