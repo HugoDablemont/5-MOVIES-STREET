@@ -22,7 +22,11 @@ body{
         height: 95%;
     }
     
-    
+    #logo{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
     
     #Elon{
         display: flex;
@@ -71,9 +75,14 @@ body{
     #caroussel{
         display: flex;
         justify-content: center;
-        align-items: flex-start;
-        
+        align-items: center;
     }
+
+    h2{
+        color: white;
+    }
+
+    
 
     @media (max-width: 600px) {
         .carousel-inner .carousel-item > div {
