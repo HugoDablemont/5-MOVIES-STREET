@@ -72,17 +72,13 @@ body{
         height: 60px;
     }
 
-    #caroussel{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     h2{
         color: white;
     }
 
-    
+    .font-weight-light{
+        background-color: rgba(0, 0, 0, 0.350);
+    }
 
     @media (max-width: 600px) {
         .carousel-inner .carousel-item > div {
