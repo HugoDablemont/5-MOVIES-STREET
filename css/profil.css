@@ -11,12 +11,10 @@
         align-items: center;
     }
 
-    .container-elon p{
-        color : white;
-        font-size: 30px;
-
-    }
-    
+p{
+        color: rgb(255, 255, 255) ;
+        
+}
     #Elon{
         display: flex;
         justify-content: center;
@@ -56,7 +54,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 200px;
+        margin-top: 160px;
     }
     .button-profil{
         display: flex;
@@ -81,17 +79,6 @@
         color: rgb(255, 60, 0) ;
         text-shadow: 5px 5px 5px orange;
         font-size: 25px;
-        
-
-    }
-
-    .liste-compte li {
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 10px;
-        text-align: center;
-        width: 30%;
-        box-shadow: 5px 5px 10px;
-        border: 2px solid black;
     }
 
     a{
@@ -101,5 +88,5 @@
     }
 
     a:hover{
-        color:rgb(255, 0, 98)
+        color: rgb(255, 60, 0) ;
     }
