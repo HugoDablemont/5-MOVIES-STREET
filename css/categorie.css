@@ -80,6 +80,11 @@ body{
         background-color: rgba(0, 0, 0, 0.350);
     }
 
+    .card-img{
+        border: white 10px solid;
+        border-radius: 20px;
+    }
+
     @media (max-width: 600px) {
         .carousel-inner .carousel-item > div {
             display: none;
