@@ -129,6 +129,15 @@ li {
     margin-left: 3%;
 }
 
+i{
+    color: white;
+}
+
+i:hover{
+    color:rgb(255, 0, 98)
+}
+
+
 @media screen and (max-width: 1600px){
     body {
         min-height: 200vh;
